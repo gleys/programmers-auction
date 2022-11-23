@@ -81,7 +81,21 @@ class UserTest {
         assertThat(user.getEmail()).isEqualTo("test@example.com");
         assertThat(user.getName()).isEqualTo("test예13");
         assertThat(user.isCertified()).isFalse();
+    }
 
+    @Test
+    @DisplayName("프로필 설정")
+    void set_profile() {
+        //given
+        User test = new User("test@example.com", "test");
+        Profile profile = new Profile("백엔드");
+
+        //when
+        test.setProfile(profile);
+
+        //then
+        assertThat(test.getProfile()).isEqualTo(profile);
+        assertThat(test.getProfile().getPosition()).isEqualTo("백엔드");
     }
 
 }

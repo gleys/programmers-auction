@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.programmerauction.domain.UserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-23T04:24:07" hostname="jognhoocBookPro.kornet" time="0.072">
+<testsuite name="com.example.programmerauction.domain.UserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-23T05:30:44" hostname="jognhoocBookPro.kornet" time="0.065">
   <properties/>
-  <testcase name="잘못된 이메일 양식이면 예외 발생" classname="com.example.programmerauction.domain.UserTest" time="0.063"/>
-  <testcase name="올바른 이메일, 닉네임" classname="com.example.programmerauction.domain.UserTest" time="0.003"/>
-  <testcase name="잘못된 닉네임 양식이면 예외 발생" classname="com.example.programmerauction.domain.UserTest" time="0.002"/>
+  <testcase name="프로필 설정" classname="com.example.programmerauction.domain.UserTest" time="0.065"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
