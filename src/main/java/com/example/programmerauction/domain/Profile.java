@@ -20,7 +20,7 @@ public class Profile extends BaseEntity {
 
     private final static Pattern URL_PATTERN = Pattern.compile("^((http|https)://)?(www.)?([a-zA-Z0-9]+)\\.[a-z]+([a-zA-z0-9.?#]+)?");
 
-    @Id @GeneratedValue
+    @Id
     @Column(name = "profile_id")
     private long id;
 
@@ -32,6 +32,11 @@ public class Profile extends BaseEntity {
 
     @Column(name = "image_url", nullable = true)
     private String imageUrl;
+
+    @MapsId
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     public Profile(final String position) {
         this.position = position;

@@ -33,11 +33,7 @@ public class User extends BaseEntity {
     @Column(name = "is_certified", nullable = false)
     private boolean isCertified;
 
-    @OneToOne(orphanRemoval = true, cascade = PERSIST)
-    @JoinTable(
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "profile_id")
-    )
+    @OneToOne(mappedBy = "user", orphanRemoval = true, cascade = PERSIST)
     private Profile profile;
 
     public User(final String email, final String name) {
