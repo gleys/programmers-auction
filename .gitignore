@@ -2,3 +2,6 @@
 /.idea/
 /build/
 /gradle/
+/API 응답 포맷.docx
+/out/
+/src/main/resources/application.yml
